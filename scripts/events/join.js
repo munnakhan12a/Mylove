@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("চলে এসেছি আমি মুন্না তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamu alaikum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,15 +66,15 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER :Mohammad Nayan 
+DEVELOPER :Mohammad Munna
 
 🟣Facebook Account Link: 
 
-https://www.facebook.com/www.xnxx.com169
+https://www.facebook.com/share/bQaQvB3cNmrWhMji/
 
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
+🔵WHATSAPP NUMBER: wa.me/+8801709825152
 
-🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢SUPPORT EMAIL: www.cybertomx@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
@@ -82,9 +82,9 @@ https://www.facebook.com/www.xnxx.com169
   }
   else {
     try {
-      if (!fs.existsSync(__dirname + `/Nayan/font/Semi.ttf`)) {
+      if (!fs.existsSync(__dirname + `/Munna/font/Semi.ttf`)) {
         let getfont = (await axios.get(fontlink, { responseType: "arraybuffer" })).data;
-        fs.writeFileSync(__dirname + `/Nayan/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
+        fs.writeFileSync(__dirname + `/Munna/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
       };
       const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
@@ -101,8 +101,8 @@ https://www.facebook.com/www.xnxx.com169
       // console.log(event.logMessageData.addedParticipants)
       var id = [];
       for (let o = 0; o < event.logMessageData.addedParticipants.length; o++) {
-        let pathImg = __dirname + `/Nayan/join/${o}.png`;
-        let pathAva = __dirname + `/Nayan/join/avt.png`;
+        let pathImg = __dirname + `/Munna/join/${o}.png`;
+        let pathAva = __dirname + `/Munna/join/avt.png`;
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
@@ -118,7 +118,7 @@ https://www.facebook.com/www.xnxx.com169
         var avatar = await this.circle(pathAva);
         let baseImage = await loadImage(pathImg);
         let baseAva = await loadImage(avatar);
-        registerFont(__dirname + `/Nayan/font/Semi.ttf`, {
+        registerFont(__dirname + `/Munna/font/Semi.ttf`, {
           family: "Semi"
         });
         let canvas = createCanvas(1902, 1082);
@@ -160,7 +160,7 @@ https://www.facebook.com/www.xnxx.com169
         ctx.restore();
         const imageBuffer = canvas.toBuffer();
         fs.writeFileSync(pathImg, imageBuffer);
-        abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
+        abx.push(fs.createReadStream(__dirname + `/Munna/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
       (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
