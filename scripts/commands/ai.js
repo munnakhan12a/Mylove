@@ -1,11 +1,11 @@
 module.exports = {
   config: {
-    name: "nani",
+    name: "ai",
     version: "1.0.0",
     permission: 0,
     credits: "Nayan",
     description: "",
-    prefix: true,
+    prefix: false,
     category: "user",
     usages: "query",
     cooldowns: 5,
