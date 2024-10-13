@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "approve",
+  name: "Approve",
   version: "2.0.0",
   permission: 0,
   credits: "nayan",
