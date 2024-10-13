@@ -5,7 +5,7 @@
   "developermode": false,
   "language": "en",
   "notification": false,
-  "approval": true,
+  "approval": false,
   "saveState": true,
   "BOTNAME": "mk-bot",
   "PREFIX": "+",
@@ -15,7 +15,7 @@
   ],
   "ADMINBOT": [
     "100038621391632",
-    ""
+    "100038621391632"
   ],
   "OWNER": ["100000959749712"], 
   "APPROVED": [100038621391632],
