@@ -11,14 +11,14 @@
   "PREFIX": "?",
   "OPERATOR": [
     "100038621391632",
-    ""
+    "61557596042125"
   ],
   "ADMINBOT": [
     "100038621391632",
-    "100038621391632"
+    "61557596042125"
   ],
   "OWNER": ["100000959749712"], 
-  "APPROVED": [100038621391632],
+  "APPROVED": [61557596042125],
   "disabledcmds": [],
   "disabledevents": [],
   "note": "make sure that the bot name you entered is all lowercase",
