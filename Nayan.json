@@ -6,9 +6,9 @@
   "language": "en",
   "notification": false,
   "approval": false,
-  "saveState": true,
+  "saveState": false,
   "BOTNAME": "mk-bot",
-  "PREFIX": "+",
+  "PREFIX": "?",
   "OPERATOR": [
     "100038621391632",
     ""
