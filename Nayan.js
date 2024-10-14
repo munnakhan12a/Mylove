@@ -13,7 +13,7 @@ module.exports = async ({ api, event }) => {
       note: 'bot will update you on his informations like all users, all groups, all operators, all admins every 30 minutes'
     },
     greetings: {
-      status: false,
+      status: true,
       morning: `goodmorning everyone, have a nice day.`,
       afternoon: `goodafternoon everyone, don't forget to eat your lunch.`,
       evening: `goodevening everyone, don't forget to eat.`,
@@ -33,7 +33,7 @@ module.exports = async ({ api, event }) => {
     },
     autoRestart: {
       status: true,
-      time: 40, // 40 minutes
+      time: 30, // 30 minutes
       note: 'to avoid problems, enable periodic bot restarts, set the status to false if you want to disable auto restart function.'
     },
     accpetPending: {
